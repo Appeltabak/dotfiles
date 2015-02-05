@@ -76,6 +76,6 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 # For a full list of active aliases, run `alias`.
 
 # Activate virtualenv
-alias a=. ./.env/bin/activate
+alias a=". ./.env/bin/activate"
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
