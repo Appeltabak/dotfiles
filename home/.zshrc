@@ -79,3 +79,4 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 alias a=". ./.env/bin/activate"
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
