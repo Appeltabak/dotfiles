@@ -78,5 +78,11 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 # Activate virtualenv
 alias a=". ./.env/bin/activate"
 
+
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+
+# Source Fuzzy File Finder if installed.
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Source Powerline if installed.
+[ -f /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh ] && source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
