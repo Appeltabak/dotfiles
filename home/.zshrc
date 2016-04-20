@@ -81,6 +81,11 @@ alias a=". ./.env/bin/activate"
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
+# Nifty weather command line tool
+function wttr() {
+  curl wttr.in/$1
+}
+
 # Source Fuzzy File Finder if installed.
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
