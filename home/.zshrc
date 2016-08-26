@@ -45,14 +45,24 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump debian history gitignore pip colored-man ssh-agent)
-
-source $ZSH/oh-my-zsh.sh
+plugins=(autojump colored-man debian git gitignore history pip ssh-agent)
 
 # User configuration
-
+### Path
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+### golang
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/development/go
+export PATH=$PATH:$GOROOT/bin
+
+### homeshick
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
+
+### oh-my-zsh
+source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -78,16 +88,7 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 # Activate virtualenv
 alias a=". ./.env/bin/activate"
 
-
-source "$HOME/.homesick/repos/homeshick/homeshick.sh"
-
 # Nifty weather command line tool
 function wttr() {
   curl wttr.in/$1
 }
-
-# Source Fuzzy File Finder if installed.
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# Source Powerline if installed.
-[ -f /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh ] && source /usr/local/lib/python2.7/dist-packages/powerline/bindings/zsh/powerline.zsh
