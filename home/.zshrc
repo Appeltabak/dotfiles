@@ -87,6 +87,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Activate virtualenv
 alias a=". ./.env/bin/activate"
+# Shortcuts for editing config
+alias vimrc="vim ~/.vimrc"
+alias zshconfig="vim ~/.zshrc"
 
 # Nifty weather command line tool
 function wttr() {
