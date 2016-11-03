@@ -82,3 +82,5 @@
 	name = Tonnis Oosterhoff
 [core]
 	editor = vim
+[url "git@gitlab.advancedclimate.nl:"]
+	insteadOf = https://gitlab.advancedclimate.nl/

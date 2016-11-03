@@ -55,7 +55,7 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 ### golang
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/development/go
-export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOPATH/bin
 
 ### homeshick
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
