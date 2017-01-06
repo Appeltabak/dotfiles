@@ -52,6 +52,8 @@ plugins=(autojump colored-man debian git gitignore history pip ssh-agent)
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# Disable Sofware Control Flow, so it doesn't freeze the terminal when I accidently type C-s in Vim.
+stty -ixon
 ### golang
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=$HOME/development/go
@@ -87,6 +89,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Activate virtualenv
 alias a=". ./.env/bin/activate"
+# always neovim
+alias vim="nvim"
 # Shortcuts for editing config
 alias vimrc="vim ~/.vimrc"
 alias zshconfig="vim ~/.zshrc"

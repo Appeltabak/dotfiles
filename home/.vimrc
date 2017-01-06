@@ -1,7 +1,11 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'bash-support.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'delimitMate.vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/syntastic'
 Plug 'chase/vim-ansible-yaml'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
@@ -9,8 +13,6 @@ Plug 'fatih/vim-go'
 Plug 'elzr/vim-json'
 Plug 'nathanielc/vim-tickscript'
 Plug 'altercation/vim-colors-solarized'
-Plug 'scrooloose/syntastic'
-Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
 
@@ -73,6 +75,11 @@ map <Leader>k <Plug>(easymotion-k)
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 
+" Enable neocomplete autocompletion
+let g:deocomplete#enable_at_startup = 1
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>""
+
 " These `n` & `N` mappings are options. You do not have to map `n` & `N` to
 " EasyMotion.  Without these mappings, `n` & `N` works fine. (These mappings
 " just provide different highlight method and have some other features )
@@ -82,8 +89,8 @@ map  N <Plug>(easymotion-prev)
 
 " Moving (block of) lines around with Ctrl-j and Ctrl-k. Learned from
 " http://reefpoints.dockyard.com/2013/09/26/vim-moving-lines-aint-hard.html
- nnoremap <C-j> :m .+1<CR>==
- nnoremap <C-k> :m .-2<CR>==
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
 
 
  " Visual mode
