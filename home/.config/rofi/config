@@ -1,6 +1,13 @@
-rofi.modi:          run,ssh
-rofi.ssh-command:   {terminal} -e "{ssh-client} {host}"
+rofi.show:          combi
+rofi.modi:          combi,ssh
+rofi.combi-modi:    run,drun         
+rofi.width:         100
+rofi.location:      7
+rofi.lines:         5
+rofi.bw:            2
+rofi.yoffset:       -2
 
+rofi.ssh-command:   {terminal} -e "{ssh-client} {host}"
 ! ------------------------------------------------------------------------------
 ! ROFI Color theme
 ! ------------------------------------------------------------------------------
