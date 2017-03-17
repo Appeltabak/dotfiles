@@ -82,5 +82,8 @@
 	name = Tonnis Oosterhoff
 [core]
 	editor = vim
+	excludesfile = /home/tonnis/.gitignore
 [url "git@gitlab.advancedclimate.nl:"]
 	insteadOf = https://gitlab.advancedclimate.nl/
+[url "git@github.com:"]
+	insteadOf = https://github.com/

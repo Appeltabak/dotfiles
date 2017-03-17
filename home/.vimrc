@@ -32,7 +32,7 @@ colorscheme solarized
 set t_Co=16
 
 " Disable arrow keys
-noremap <Up> <NOP>
+inoremap <Up> <NOP>
 inoremap <Down> <NOP>
 inoremap <Left> <NOP>
 inoremap <Right> <NOP>
@@ -52,7 +52,7 @@ imap jj <ESC>
 " Save file in normal mode by pressing Enter
 nnoremap <CR> :w<CR>
 
-" Wrap line when it exceeds textwidth.
+" Set leader key to 'Space' 
 let mapleader = "\<Space>"
 
 " Open Ctrl-P to search in open buffers.
@@ -86,12 +86,10 @@ inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>""
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
 
-
 " Moving (block of) lines around with Ctrl-j and Ctrl-k. Learned from
 " http://reefpoints.dockyard.com/2013/09/26/vim-moving-lines-aint-hard.html
 nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==
-
 
  " Visual mode
 vnoremap <C-j> :m '>+1<CR>gv=gv
