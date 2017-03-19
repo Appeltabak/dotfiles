@@ -1,6 +1,6 @@
 rofi.show:          combi
 rofi.modi:          combi,ssh
-rofi.combi-modi:    run,drun         
+rofi.combi-modi:    run,drun
 rofi.width:         100
 rofi.location:      7
 rofi.lines:         5
