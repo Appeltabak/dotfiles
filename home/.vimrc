@@ -1,11 +1,10 @@
 call plug#begin('~/.vim/plugged')
 
-Plug 'bash-support.vim'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'delimitMate.vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/syntastic'
+Plug 'arrufat/vala.vim'
 Plug 'chase/vim-ansible-yaml'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-fugitive'
@@ -52,7 +51,7 @@ imap jj <ESC>
 " Save file in normal mode by pressing Enter
 nnoremap <CR> :w<CR>
 
-" Set leader key to 'Space' 
+" Set leader key to 'Space'
 let mapleader = "\<Space>"
 
 " Open Ctrl-P to search in open buffers.

@@ -8,5 +8,5 @@
     },
     "zenMode.hideStatusBar": false,
     "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false
+    "telemetry.enableCrashReporter": false,
 }
