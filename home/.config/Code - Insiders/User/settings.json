@@ -1,0 +1,12 @@
+{
+    "editor.minimap.enabled": false,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#333333"
+    },
+    "zenMode.hideStatusBar": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false
+}
