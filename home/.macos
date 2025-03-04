@@ -1,0 +1,34 @@
+#!/bin/bash
+
+########
+# Dock #
+########
+
+# Autohide
+defaults write com.apple.dock "autohide" -bool "true"
+# Unhide without delay
+defaults write com.apple.dock "autohide-delay" -float "0"
+# Minimalize mineffect
+defaults write com.apple.dock "mineffect" -string "scale"
+# Speed up hide/unhide animation
+defaults write com.apple.dock "autohide-time-modifier" -float "0.5"
+
+killall dock
+
+##########
+# Finder #
+##########
+
+# Listview
+defaults write com.apple.finder "FXPreferredViewStyle" -string "Nlsv"
+# Show path bar
+defaults write com.apple.finder "ShowPathbar" -bool "true"
+
+killall Finder
+
+################
+# Apps & Tools #
+################
+brew install --cask \
+  alt-tab \
+  ghostty
