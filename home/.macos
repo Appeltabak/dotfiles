@@ -36,6 +36,11 @@ defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 ################
 # Apps & Tools #
 ################
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 brew install --cask \
   alt-tab \
-  ghostty
+  ghostty \
+  beekeeper-studio \
+  bruno
