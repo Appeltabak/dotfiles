@@ -26,6 +26,11 @@ defaults write com.apple.finder "ShowPathbar" -bool "true"
 
 killall Finder
 
+#########
+# Mouse #
+#########
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+
 ################
 # Apps & Tools #
 ################
