@@ -29,6 +29,8 @@ killall Finder
 #########
 # Mouse #
 #########
+
+# Tick to tap
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 
 ################
